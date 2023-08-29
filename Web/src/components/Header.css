@@ -1,0 +1,160 @@
+#bold {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#boldest {
+    font-weight: 1000;
+    font-size: 32px;
+}
+
+.header_nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header_outer {
+    min-width: 783px;
+}
+
+.header_inner {
+    padding: 16px;
+    margin: auto;
+    
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_inner button {
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.nav {
+    background-color: rgb(241, 243, 246);
+}
+
+.nav_container {
+    display: flex;
+    flex-direction: row-reverse;
+
+    height: 44px;
+
+    margin-left: 12px;
+}
+
+.nav_searchBox {
+    padding: 0 10px;
+
+    display: flex;
+    border: 1px solid rgb(222, 226, 230);
+    border-radius: 100px;
+    background-color: white;
+
+    align-items: center;
+}
+
+.search_tagWrap {
+    display: flex;
+    position: relative;
+
+    background-color: rgb(241, 243, 246);
+    border-radius: 100px;
+}
+
+.search_tagBtn_item,
+.search_tagBtn_store {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s, color 0.2s;
+        /* 배경색과 글자색 변경 시간 설정 */
+}
+
+.search_tagBtn_item {
+    width: 60px;
+    color: rgb(66, 133, 244);
+    background-color: transparent;
+    border: 1px solid rgb(66, 133, 244);
+}
+
+.search_tagBtn_store {
+    width: 70px;
+    color: #333;
+    /* 기본 버튼 색상 */
+    background-color: rgb(241, 243, 246);
+}
+
+.search_tagBtn_item.active {
+    color: #fff;
+    background-color: rgb(66, 133, 244);
+}
+
+.search_tagBtn_store.active {
+    color: #fff;
+    background-color: rgb(66, 133, 244);
+}
+
+.active_indicator {
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    background-color: rgb(66, 133, 244);
+    border-radius: 100px;
+    transform-origin: left center;
+    transition: transform 0.3s;
+}
+
+.search_inputWrap {
+    height: 30px;
+    /* box-sizing: border-box; */
+    /* text-align: left; */
+    margin-left: 3px;
+    margin-right: 12px;
+    
+    overflow: hidden;
+}
+
+.search_input {
+    /* width: 100%; */
+    height: 30px;
+    border: 0;
+    padding: 0;
+    margin-right: 12px;
+}
+
+.search_btnWrap {
+    /* display: flex;
+  align-items: center; */
+    width: 50px;
+    height: 32px;
+    margin: 4px;
+
+    border-radius: 3px;
+
+}
+
+.search_btn {
+    height: 30px;
+    width: 100%;
+
+    background-color: rgb(66, 133, 244);
+
+    color: white;
+    cursor: pointer;
+
+    font-size: 12px;
+}

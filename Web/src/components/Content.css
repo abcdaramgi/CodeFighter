@@ -1,0 +1,64 @@
+img{
+    max-width: 400px;
+    margin: 20px;
+}
+
+.content_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+}
+
+.content_container {
+    position: relative;
+
+    width: 1360px;
+    height: 720px;
+
+    background-color: red;
+
+    margin-top: 120px;
+}
+
+.content_video {
+    position: absolute;
+    width: 1008px;
+    height: 567px;
+
+    margin: 15px 0 0 15px;
+
+    background-color: green;
+    
+    z-index: 1;
+}
+
+.content_sub {
+    position: absolute;
+
+    top: 5%;
+    left: 75%;
+
+    width: 325px;
+    height: 567px;
+
+    background-color: white;
+    
+    z-index: 2;
+}
+
+.content_arrow {
+    position: absolute;
+
+    top: 78%;
+    left: 67%;
+
+    width: 440px;
+    height: 100px;
+
+    background-color: blue;
+
+    z-index: 3;
+}

@@ -1,0 +1,55 @@
+.item_img{
+    max-width: 600px;
+}
+
+.layout_item {
+    margin: 0;
+    
+}
+
+.container_item {
+    position: relative;
+
+    /* margin: 0 auto; */
+    width: 1200px;
+
+    height: 100vh;
+
+    background-color: white;
+
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 6px rgba(0, 0, 0, 0.03);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    margin: 0 auto;
+   
+
+}
+
+.component_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 100px;
+
+
+        
+            text-align: center;
+        
+            width: 100%;
+            height: 100%;
+}
+
+.item_buy{
+    padding-right: 60px;
+}
+
+.item_buy_btn{
+    width: 240px;
+}
