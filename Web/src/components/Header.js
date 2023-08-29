@@ -50,7 +50,6 @@ function Header() {
                     <div className="nav_containerWrap">
                         <div className="nav_container">
                             <div className="nav_searchBox">
-
                                     <div className="search_tagWrap">
                                         <button className="search_tagBtn_item" type="button">영상</button>
                                         <button className="search_tagBtn_store" type="button">소환사</button>

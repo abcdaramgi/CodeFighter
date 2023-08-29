@@ -10,6 +10,10 @@ import Submit from './components/views/SubmitPage/Submit';
 import SubmitSignup from './components/views/SubmitPage/SubmitSignup';
 import SubmitAgree from './components/views/SubmitPage/SubmitAgree';
 import Home from './components/views/HomePage/Home';
+import Item1 from './components/views/ItemPage/Item1';
+import Item2 from './components/views/ItemPage/Item2';
+import Item3 from './components/views/ItemPage/Item3';
+import Item1Order from './components/views/OrderPage/Order';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 // return 안에는 병렬로 태그 2개 이상 기입 금지
@@ -35,6 +39,10 @@ function App() {
           <Route path='/register/submit' element={<Submit />}/>
           <Route path='/register/submit/agree' element={<SubmitAgree />}/>
           <Route path='/register/submit/signup' element={<SubmitSignup />}/>
+          <Route path='/item1' element={<Item1 />}/>
+          <Route path='/item2' element={<Item2 />}/>
+          <Route path='/item3' element={<Item3 />}/>
+          <Route path='/item1/order' element={<Item1Order />}/>
         </Routes>
       </BrowserRouter>
       /* <button onClick={() => { // state변경함수 특징 기존state==신규state의 경우 변경안해줌

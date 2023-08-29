@@ -5,20 +5,33 @@ function Content() {
     return (
         <>
             <div className="content_main">
-                <div className="content_container">
-                    <div className="content_video">
-
-                    </div>
-                    <div className="content_sub">
-
-                    </div>
-                    <div className="content_arrow">
-
+                <a href="/item1">
+                <div className="content_item1">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_960_720.jpg" alt="item1" />
+                    <div className="content_item1_text">
+                        <h3>아이템1</h3>
+                        <p>아이템1 설명</p>
                     </div>
                 </div>
-            </div>
-            <div className="content_rank">
-
+                </a>
+                <a href="/item2">
+                <div className="content_item2">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_960_720.jpg" alt="item2" />
+                    <div className="content_item2_text">
+                        <h3>아이템2</h3>
+                        <p>아이템2 설명</p>
+                    </div>
+                </div>
+                </a>
+                <a href="/item3">
+                <div className="content_item3">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_960_720.jpg" alt="item3" />
+                    <div className="content_item3_text">
+                        <h3>아이템3</h3>
+                        <p>아이템3 설명</p>
+                    </div>    
+                </div>
+                </a>
             </div>
         </>
     );
