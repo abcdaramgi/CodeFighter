@@ -11,6 +11,37 @@ function Order() {
         window.location.href = '/order/finish';
     }
 
+    // Button을 클릭했을때 TextField에 입력한 값들을 가져와서 서버에 보내주는 함수
+    const handleBuyTest = () => {
+        const userId = document.getElementById('userId').value;
+        const userPw = document.getElementById('userPw').value;
+        const userAddress = document.getElementById('userAddress').value;
+        const userPhone = document.getElementById('userPhone').value;
+
+        // rest api를 사용해 서버에 보내주는 코드
+        fetch('/api/order', {
+            method: 'post',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify({
+                userId: userId,
+                userPw: userPw,
+                userAddress: userAddress,
+                userPhone: userPhone
+            })
+        })
+        .then(res => res.json())
+        .then(data => {
+            if(data.success) {
+                window.location.href = '/order/finish';
+            } else {
+                alert('주문 실패')
+            }
+        }
+        )
+    }
+
     return (
         <>
             <div className='layout'>
