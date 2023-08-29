@@ -36,14 +36,12 @@ function Header() {
                 <div className="header_outer">
                     <div className="header_inner">
                         <div className="header_team">
-                            <a href="/"><button id="bold">dibs</button></a>
+                            <a href="/"><button id="bold">code_fighter</button></a>
                         </div>
                         <div className="header_logo">
-                            <a href="/"><button id="boldest">LOLOSSEUM</button></a>
+                            <a href="/"><button id="boldest">eCommerce</button></a>
                         </div>
                         <div className="header_options">
-                            <a href="/"><button>포인트</button></a>
-                            <a href="/"><button>투기장</button></a>
                             <a href="/login"><button>로그인</button></a>
                         </div>
                     </div>
