@@ -10,9 +10,9 @@ function Item3() {
 
     return (
         <>
-            <div className='layout'>
-                <div className='container'>
-                    <div className='component'>
+            <div className='layout_item'>
+                <div className='container_item'>
+                    <div className='component_item'>
                         <div className='item'>
                             <div className='item_img'>
                                 <img className='item_img' src="https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_960_720.jpg" alt="item1" />
