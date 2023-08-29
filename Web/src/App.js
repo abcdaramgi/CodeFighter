@@ -14,6 +14,9 @@ import Item1 from './components/views/ItemPage/Item1';
 import Item2 from './components/views/ItemPage/Item2';
 import Item3 from './components/views/ItemPage/Item3';
 import Item1Order from './components/views/OrderPage/Order';
+import Item2Order from './components/views/OrderPage/Order';
+import Item3Order from './components/views/OrderPage/Order';
+import Finish from './components/views/finish_page/finish';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 // return 안에는 병렬로 태그 2개 이상 기입 금지
@@ -43,6 +46,11 @@ function App() {
           <Route path='/item2' element={<Item2 />}/>
           <Route path='/item3' element={<Item3 />}/>
           <Route path='/item1/order' element={<Item1Order />}/>
+          <Route path='/item2/order' element={<Item2Order />}/>
+          <Route path='/item3/order' element={<Item3Order />}/>
+          <Route path='/order/finish' element={<Finish />}/>
+          
+         
         </Routes>
       </BrowserRouter>
       /* <button onClick={() => { // state변경함수 특징 기존state==신규state의 경우 변경안해줌

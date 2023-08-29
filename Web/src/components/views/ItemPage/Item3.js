@@ -1,7 +1,13 @@
 import React from 'react';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
+import './Item.css';
 
 function Item3() {
+    const handleBuy = () => {
+        window.location.href = '/item3/order';
+    }
+
     return (
         <>
             <div className='layout'>
@@ -19,7 +25,7 @@ function Item3() {
                                     <p>아이템1 설명</p>
                                 </div>
                                 <div className='item_buy_btn'>
-                                    <Button fullWidth variant="outlined" size='large'>구매하기</Button>
+                                    <Button fullWidth variant="outlined" size='large' onClick={handleBuy}>구매하기</Button>
                                 </div>
                         </div>
                     </div>

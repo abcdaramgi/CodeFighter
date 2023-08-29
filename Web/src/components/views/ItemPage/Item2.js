@@ -1,7 +1,13 @@
 import React from 'react';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
+import './Item.css';
 
 function Item2() {
+    const handleBuy = () => {
+        window.location.href = '/item2/order';
+    }
+
     return (
         <>
             <div className='layout'>
@@ -14,12 +20,12 @@ function Item2() {
                         </div>
                             <div className='item_buy'>
                                 <div className='item_buy_price'>
-                                    <h2>아이템1</h2>
+                                    <h2>아이템2</h2>
                                     <p>1000원</p>
-                                    <p>아이템1 설명</p>
+                                    <p>아이템2 설명</p>
                                 </div>
                                 <div className='item_buy_btn'>
-                                    <Button fullWidth variant="outlined" size='large'>구매하기</Button>
+                                    <Button fullWidth variant="outlined" size='large' onClick={handleBuy}>구매하기</Button>
                                 </div>
                         </div>
                     </div>
