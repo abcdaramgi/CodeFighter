@@ -8,6 +8,34 @@ import './Order.css'
 function Order() {
 
     const handleBuy = () => {
+        const userId = document.getElementById('userId').value;
+        const productCount = document.getElementById('productCount').value;
+        const userAddress = document.getElementById('userAddress').value;
+        const userPhone = document.getElementById('userPhone').value;
+
+        // rest api를 사용해 서버에 보내주는 코드
+        fetch('/api/order', {
+            method: 'post',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify({
+                userId: userId,
+                userPhone: userPhone,
+                userAddress: userAddress,
+                productCount: productCount
+            })
+        })
+        .then(res => res.json())
+        .then(data => {
+            if(data.success) {
+                window.location.href = '/order/finish';
+            } else {
+                alert('주문 실패')
+            }
+        }
+        )
+
         window.location.href = '/order/finish';
     }
 
