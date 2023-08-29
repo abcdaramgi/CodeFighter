@@ -14,7 +14,7 @@ function Order() {
     // Button을 클릭했을때 TextField에 입력한 값들을 가져와서 서버에 보내주는 함수
     const handleBuyTest = () => {
         const userId = document.getElementById('userId').value;
-        const userPw = document.getElementById('userPw').value;
+        const productCount = document.getElementById('productCount').value;
         const userAddress = document.getElementById('userAddress').value;
         const userPhone = document.getElementById('userPhone').value;
 
@@ -26,9 +26,9 @@ function Order() {
             },
             body: JSON.stringify({
                 userId: userId,
-                userPw: userPw,
+                userPhone: userPhone,
                 userAddress: userAddress,
-                userPhone: userPhone
+                productCount: productCount
             })
         })
         .then(res => res.json())
@@ -49,8 +49,9 @@ function Order() {
                     <div className='component'>
                         <div className='hello'>주문하기</div>
                             <TextField fullWidth id="userId" label="이름" variant="outlined" margin='normal'/>
-                            <TextField fullWidth id="userPw" label="전화번호" variant="outlined" margin='dense'/>
-                            <TextField fullWidth id="userPw" label="주소" variant="outlined" margin='dense'/>
+                            <TextField fullWidth id="userPhone" label="전화번호" variant="outlined" margin='dense'/>
+                            <TextField fullWidth id="userAddress" label="주소" variant="outlined" margin='dense'/>
+                            <TextField fullWidth id="productCount" label="상품 구매 갯수" variant="outlined" margin='dense'/>
                         <div className='btn_component'>
                         <Button fullWidth variant="outlined" size='large' onClick={handleBuy}>구매하기</Button>
                         </div>
